@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>THE STYLE ATELIER</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#000000,#2b1d0e,#5a3d1a);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.container{
+    max-width:600px;
+    margin:auto;
+}
+
+.profile{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid white;
+    margin-bottom:20px;
+}
+
+h1{
+    margin-top:15px;
+    font-size:38px;
+    font-weight:800;
+    letter-spacing:2px;
+}
+
+p{
+    margin:10px 0 30px;
+    color:#dddddd;
+}
+
+.product{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    border-radius:15px;
+    padding:20px;
+    margin:20px 0;
+    transition:0.3s;
+}
+
+.product:hover{
+    transform:scale(1.03);
+}
+
+.product img{
+    width:20%;
+    border-radius:10px;
+}
+
+.product h2{
+    margin:15px 0;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#d4af37;
+    color:black;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:bold;
+    border:none;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#f4d03f;
+}
+
+/* COLLECTION SECTIONS */
+
+.collection{
+    display:none;
+    margin-top:25px;
+}
+
+.collection h2{
+    margin-bottom:20px;
+}
+
+.item{
+    background:rgba(255,255,255,0.08);
+    border-radius:12px;
+    padding:15px;
+    margin:12px 0;
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.item img{
+    width:80px;
+    height:80px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.item span{
+    flex:1;
+    text-align:left;
+}
+
+footer{
+    margin-top:40px;
+    color:#cccccc;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="pp.jpg" class="profile" alt="Profile Picture">
+
+<h1>THE STYLE ATELIER</h1>
+
+<p>Curated Fashion Picks & Trending Styles</p>
+
+<!-- KURTAS -->
+
+<div class="product">
+    <img src="kurta pp.jpg" alt="Ethnic Kurtas">
+    <h2>ETHNIC KURTAS</h2>
+
+    <button class="btn" onclick="toggleSection('kurtaSection')">
+        View Collection
+    </button>
+</div>
+
+<div id="kurtaSection" class="collection">
+
+    <h2>Ethnic Kurta Collection</h2>
+
+    <div class="item">
+        <img src="kurta1.jpg" alt="">
+        <span>Floral Printed Kurta</span>
+        <a href="AFFILIATE_LINK_1" target="_blank" class="btn">Buy</a>
+    </div>
+
+    <div class="item">
+        <img src="kurta2.jpg" alt="">
+        <span>Anarkali Kurta</span>
+        <a href="AFFILIATE_LINK_2" target="_blank" class="btn">Buy</a>
+    </div>
+
+    <div class="item">
+        <img src="kurta3.jpg" alt="">
+        <span>Cotton Daily Wear Kurta</span>
+        <a href="AFFILIATE_LINK_3" target="_blank" class="btn">Buy</a>
+    </div>
+
+</div>
+
+<!-- DRESSES -->
+
+<div class="product">
+    <img src="dress pp.jpg" alt="Women's Dresses">
+    <h2>TRENDY WOMEN'S DRESSES</h2>
+
+    <button class="btn" onclick="toggleSection('dressSection')">
+        View Collection
+    </button>
+</div>
+
+<div id="dressSection" class="collection">
+
+    <h2>Dress Collection</h2>
+
+    <div class="item">
+        <img src="dress1.jpg" alt="">
+        <span>Elegant Party Dress</span>
+        <a href="AFFILIATE_LINK_4" target="_blank" class="btn">Buy</a>
+    </div>
+
+    <div class="item">
+        <img src="dress2.jpg" alt="">
+        <span>Maxi Dress</span>
+        <a href="AFFILIATE_LINK_5" target="_blank" class="btn">Buy</a>
+    </div>
+
+    <div class="item">
+        <img src="dress3.jpg" alt="">
+        <span>Casual Summer Dress</span>
+        <a href="AFFILIATE_LINK_6" target="_blank" class="btn">Buy</a>
+    </div>
+
+</div>
+
+<!-- WATCHES -->
+
+<div class="product">
+    <img src="watch pp.jpg" alt="Women's Watches">
+    <h2>ELEGANT WOMEN'S WATCHES</h2>
+
+    <button class="btn" onclick="toggleSection('watchSection')">
+        View Collection
+    </button>
+</div>
+
+<div id="watchSection" class="collection">
+
+    <h2>Watch Collection</h2>
+
+    <div class="item">
+        <img src="watch1.jpg" alt="">
+        <span>Rose Gold Watch</span>
+        <a href="AFFILIATE_LINK_7" target="_blank" class="btn">Buy</a>
+    </div>
+
+    <div class="item">
+        <img src="watch2.jpg" alt="">
+        <span>Leather Strap Watch</span>
+        <a href="AFFILIATE_LINK_8" target="_blank" class="btn">Buy</a>
+    </div>
+
+    <div class="item">
+        <img src="watch3.jpg" alt="">
+        <span>Luxury Analog Watch</span>
+        <a href="AFFILIATE_LINK_9" target="_blank" class="btn">Buy</a>
+    </div>
+
+</div>
+
+<footer>
+© 2026 THE STYLE ATELIER
+</footer>
+
+</div>
+
+<script>
+
+function toggleSection(sectionId){
+
+    const section = document.getElementById(sectionId);
+
+    if(section.style.display === "block"){
+        section.style.display = "none";
+    }else{
+        section.style.display = "block";
+
+        section.scrollIntoView({
+            behavior:"smooth"
+        });
+    }
+}
+
+</script>
+
+</body>
+</html>
